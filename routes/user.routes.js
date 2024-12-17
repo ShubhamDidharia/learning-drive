@@ -65,7 +65,7 @@ router.post('/login',
     },process.env.JWT_SECRET)
 
     res.cookie('token',token);
-    res.send('logged in');
+    res.render('home');
 
 })
 
